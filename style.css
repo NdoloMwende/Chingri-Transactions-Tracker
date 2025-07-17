@@ -60,3 +60,26 @@ button {
   background-color: var(--primary);
   color: black;
 }
+
+#alertBox {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--alert);
+  color: rgb(49, 214, 159);
+  border-radius: var(--radius);
+  display: none;
+}
+
+#alertBox.visible {
+  display: block;
+}
+
+ #adviceBox {
+  background-color: var(--advice);
+  color: black;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  border-left: 5px solid var(--primary);
+}
