@@ -38,3 +38,13 @@ button {
   border-radius: var(--radius);
   cursor: pointer;
 }
+
+#table-section {
+  overflow-x: auto;
+}
+
+#transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
