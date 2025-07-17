@@ -1,0 +1,447 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2024-01-11",
+      "method": "Netflix",
+      "amount": 2104.2,
+      "vendor": "Netflix"
+    },
+    {
+      "id": 2,
+      "date": "2024-01-19",
+      "method": "Shell",
+      "amount": 2567.86,
+      "vendor": "Shell"
+    },
+    {
+      "id": 3,
+      "date": "2024-02-02",
+      "method": "Zuku",
+      "amount": 1242.83,
+      "vendor": "Zuku"
+    },
+    {
+      "id": 4,
+      "date": "2024-02-07",
+      "method": "Netflix",
+      "amount": 3432.3,
+      "vendor": "Netflix"
+    },
+    {
+      "id": 5,
+      "date": "2024-03-11",
+      "method": "KFC",
+      "amount": 4402.76,
+      "vendor": "KFC"
+    },
+    {
+      "id": 6,
+      "date": "2024-03-20",
+      "method": "Quickmart",
+      "amount": 3766.57,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 7,
+      "date": "2024-04-03",
+      "method": "Equity Bank",
+      "amount": 4674.62,
+      "vendor": "Equity Bank"
+    },
+    {
+      "id": 8,
+      "date": "2024-04-06",
+      "method": "Uber",
+      "amount": 3972.34,
+      "vendor": "Uber"
+    },
+    {
+      "id": 9,
+      "date": "2024-05-13",
+      "method": "Netflix",
+      "amount": 4682.75,
+      "vendor": "Netflix"
+    },
+    {
+      "id": 10,
+      "date": "2024-05-11",
+      "method": "Naivas",
+      "amount": 1585.34,
+      "vendor": "Naivas"
+    },
+    {
+      "id": 11,
+      "date": "2024-06-15",
+      "method": "Java House",
+      "amount": 703.86,
+      "vendor": "Java House"
+    },
+    {
+      "id": 12,
+      "date": "2024-06-13",
+      "method": "Safaricom",
+      "amount": 2739.71,
+      "vendor": "Safaricom"
+    },
+    {
+      "id": 13,
+      "date": "2024-07-22",
+      "method": "Kenya Power",
+      "amount": 4380.2,
+      "vendor": "Kenya Power"
+    },
+    {
+      "id": 14,
+      "date": "2024-07-22",
+      "method": "Netflix",
+      "amount": 4263.5,
+      "vendor": "Netflix"
+    },
+    {
+      "id": 15,
+      "date": "2024-08-28",
+      "method": "Uber",
+      "amount": 1453.96,
+      "vendor": "Uber"
+    },
+    {
+      "id": 16,
+      "date": "2024-08-13",
+      "method": "Zuku",
+      "amount": 1431.97,
+      "vendor": "Zuku"
+    },
+    {
+      "id": 17,
+      "date": "2024-09-23",
+      "method": "Spotify",
+      "amount": 3611.91,
+      "vendor": "Spotify"
+    },
+    {
+      "id": 18,
+      "date": "2024-09-01",
+      "method": "KFC",
+      "amount": 1172.65,
+      "vendor": "KFC"
+    },
+    {
+      "id": 19,
+      "date": "2024-10-29",
+      "method": "Zuku",
+      "amount": 3611.5,
+      "vendor": "Zuku"
+    },
+    {
+      "id": 20,
+      "date": "2024-10-05",
+      "method": "Kenya Power",
+      "amount": 2634.75,
+      "vendor": "Kenya Power"
+    },
+    {
+      "id": 21,
+      "date": "2024-11-02",
+      "method": "Jumia",
+      "amount": 1337.04,
+      "vendor": "Jumia"
+    },
+    {
+      "id": 22,
+      "date": "2024-11-13",
+      "method": "Equity Bank",
+      "amount": 1258.11,
+      "vendor": "Equity Bank"
+    },
+    {
+      "id": 23,
+      "date": "2024-12-06",
+      "method": "M-PESA",
+      "amount": 2828.36,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 24,
+      "date": "2024-12-16",
+      "method": "Quickmart",
+      "amount": 4875.26,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 25,
+      "date": "2025-01-24",
+      "method": "Zuku",
+      "amount": 4361.34,
+      "vendor": "Zuku"
+    },
+    {
+      "id": 26,
+      "date": "2025-01-07",
+      "method": "Quickmart",
+      "amount": 3306.18,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 27,
+      "date": "2025-02-12",
+      "method": "Spotify",
+      "amount": 3233.87,
+      "vendor": "Spotify"
+    },
+    {
+      "id": 28,
+      "date": "2025-02-20",
+      "method": "M-PESA",
+      "amount": 3932.96,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 29,
+      "date": "2025-03-04",
+      "method": "Safaricom",
+      "amount": 4279.88,
+      "vendor": "Safaricom"
+    },
+    {
+      "id": 30,
+      "date": "2025-03-01",
+      "method": "Shell",
+      "amount": 3792.66,
+      "vendor": "Shell"
+    },
+    {
+      "id": 31,
+      "date": "2025-04-10",
+      "method": "Equity Bank",
+      "amount": 3055.17,
+      "vendor": "Equity Bank"
+    },
+    {
+      "id": 32,
+      "date": "2025-04-19",
+      "method": "M-PESA",
+      "amount": 451.06,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 33,
+      "date": "2025-05-02",
+      "method": "Quickmart",
+      "amount": 393.23,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 34,
+      "date": "2025-05-26",
+      "method": "Netflix",
+      "amount": 3352.04,
+      "vendor": "Netflix"
+    },
+    {
+      "id": 35,
+      "date": "2025-06-27",
+      "method": "M-PESA",
+      "amount": 2070.68,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 36,
+      "date": "2025-06-10",
+      "method": "Quickmart",
+      "amount": 2339.28,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 37,
+      "date": "2025-07-22",
+      "method": "Kenya Power",
+      "amount": 3775.97,
+      "vendor": "Kenya Power"
+    },
+    {
+      "id": 38,
+      "date": "2025-07-18",
+      "method": "M-PESA",
+      "amount": 4377.6,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 39,
+      "date": "2025-08-15",
+      "method": "Quickmart",
+      "amount": 759.63,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 40,
+      "date": "2025-08-13",
+      "method": "Safaricom",
+      "amount": 4142.62,
+      "vendor": "Safaricom"
+    },
+    {
+      "id": 41,
+      "date": "2025-09-01",
+      "method": "Tuskys",
+      "amount": 3034.38,
+      "vendor": "Tuskys"
+    },
+    {
+      "id": 42,
+      "date": "2025-09-10",
+      "method": "Uber",
+      "amount": 809.09,
+      "vendor": "Uber"
+    },
+    {
+      "id": 43,
+      "date": "2025-10-06",
+      "method": "Kenya Power",
+      "amount": 3364.84,
+      "vendor": "Kenya Power"
+    },
+    {
+      "id": 44,
+      "date": "2025-10-20",
+      "method": "Tuskys",
+      "amount": 737.15,
+      "vendor": "Tuskys"
+    },
+    {
+      "id": 45,
+      "date": "2025-11-27",
+      "method": "Quickmart",
+      "amount": 1923.26,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 46,
+      "date": "2025-11-11",
+      "method": "Shell",
+      "amount": 4180.52,
+      "vendor": "Shell"
+    },
+    {
+      "id": 47,
+      "date": "2025-12-23",
+      "method": "M-PESA",
+      "amount": 4631.97,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 48,
+      "date": "2025-12-12",
+      "method": "Zuku",
+      "amount": 1742.81,
+      "vendor": "Zuku"
+    },
+    
+  
+    {
+      "id": 49,
+      "date": "2025-03-22",
+      "method": "Spotify",
+      "amount": 1895.4,
+      "vendor": "Spotify"
+    },
+    {
+      "id": 50,
+      "date": "2024-11-08",
+      "method": "Jumia",
+      "amount": 2732.99,
+      "vendor": "Jumia"
+    },
+    {
+      "id": 51,
+      "date": "2025-06-16",
+      "method": "Tuskys",
+      "amount": 1397.2,
+      "vendor": "Tuskys"
+    },
+    {
+      "id": 52,
+      "date": "2024-08-04",
+      "method": "Moringa School",
+      "amount": 5220,
+      "vendor": "Moringa"
+    },
+    {
+      "id": 53,
+      "date": "2025-09-18",
+      "method": "University of Nairobi",
+      "amount": 8411.9,
+      "vendor": "University of Nairobi"
+    },
+    {
+      "id": 54,
+      "date": "2024-10-13",
+      "method": "Safaricom Airtime",
+      "amount": 320,
+      "vendor": "Safaricom"
+    },
+    {
+      "id": 55,
+      "date": "2025-04-27",
+      "method": "Cafe Arabica",
+      "amount": 1165.75,
+      "vendor": "Cafe Arabica"
+    },
+    {
+      "id": 56,
+      "date": "2024-12-30",
+      "method": "Netflix",
+      "amount": 2433.6,
+      "vendor": "Netflix"
+    },
+    {
+      "id": 57,
+      "date": "2025-01-11",
+      "method": "Total Petrol Station",
+      "amount": 4570.12,
+      "vendor": "Total"
+    },
+    {
+      "id": 58,
+      "date": "2024-09-06",
+      "method": "Sparkling Bubble",
+      "amount": 2760.44,
+      "vendor": "Sparkling Bubble"
+    },
+    {
+      "id": 59,
+      "date": "2025-02-25",
+      "method": "M-PESA",
+      "amount": 3511.21,
+      "vendor": "M-PESA"
+    },
+    {
+      "id": 60,
+      "date": "2024-06-21",
+      "method": "Quickmart",
+      "amount": 2390,
+      "vendor": "Quickmart"
+    },
+    {
+      "id": 61,
+      "date": "2025-10-12",
+      "method": "Zuku",
+      "amount": 1844.65,
+      "vendor": "Zuku"
+    },
+    {
+      "id": 62,
+      "date": "2024-05-08",
+      "method": "Java House",
+      "amount": 893.4,
+      "vendor": "Java House"
+    },
+    {
+      "id": 63,
+      "date": "2025-11-19",
+      "method": "Shell",
+      "amount": 3742.22,
+      "vendor": "Shell"
+    }
+      ]
+    }

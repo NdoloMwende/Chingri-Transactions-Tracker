@@ -130,6 +130,12 @@ button:hover {
   flex-direction: column;
 }
 
+body.dark-mode #limitSettings select {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-color: #2C2C2C;
+}
+
 body.dark-mode {
   background-color: #121212;
   color: #F0F0F0;
@@ -139,3 +145,5 @@ body.dark-mode {
   background-color: #222;
   color: #fff;
 }
+
+
