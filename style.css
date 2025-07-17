@@ -114,3 +114,13 @@ button {
   gap: 0.5rem;
   color: #000;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #F0F0F0;
+}
+
+.dark-mode table {
+  background-color: #222;
+  color: #fff;
+}

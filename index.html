@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chingri-Transactions Tracker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- WebPage Title -->
+  <title>Chingri-Transactions Tracker</title> 
+  <!-- Externl CSS link -->
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-   <header><h1>Chingri-Transactions Tracker</h1>
-    <div id="menuContainer">
-       <button id="hamburgerToggle">☰</button>
-        <div id="dropdownMenu" class="dropdown-content">
-        <label><input type="checkbox" id="darkModeToggle"> Dark Mode</label><br>
-        <label><input type="checkbox" id="alertToggle"> Alert Me</label>
-      
-        <div id="limitSettings" style="margin-top: 1rem;">
+
+<header>
+  <!-- Main Title -->
+  <h1>Chingri-Transactions Tracker</h1>
+  <!-- Navigation Container -->
+  <div id="menuContainer">
+    
+    <!-- Button with dropdown for extra settings for customisation -->
+    <button id="hamburgerToggle">☰</button>
+    <div id="dropdownMenu" class="dropdown-content">
+      <label><input type="checkbox" id="darkModeToggle"> Dark Mode</label><br>
+      <label><input type="checkbox" id="alertToggle"> Alert Me</label>
+     
+      <!-- Customisable spending limits -->
+      <div id="limitSettings" style="margin-top: 1rem;">
         <input type="number" id="dailyLimit" placeholder="Daily Limit">
         <input type="number" id="weeklyLimit" placeholder="Weekly Limit">
         <input type="number" id="monthlyLimit" placeholder="Monthly Limit">
-
-           <label for="alertFrequency" style="display: block; margin-top: 0.5rem;">Alert Frequency:</label>
+       
+        <!-- label for frequency of alerst selection -->
+        <label for="alertFrequency" style="display: block; margin-top: 0.5rem;">Alert Frequency:</label>
         <select id="alertFrequency">
           <option value="daily">Daily</option>
           <option value="weekly">Weekly</option>
           <option value="monthly">Monthly</option>
         </select>
-         <button id="saveLimitBtn" style="margin-top: 0.5rem;">Save Limit</button>
-
-        </div>
-        </div>
+       
+        <!-- Save limits to local storage button  -->
+        <button id="saveLimitBtn" style="margin-top: 0.5rem;">Save Limit</button>
+      
+      </div>
     </div>
-</header> 
-   <main>
+  </div>
+ 
+</header>
+
+  <main>
+    <!-- Structure for filtering Transacations -->
     <section>
-        <div id="filter-section">
+      <div id="filter-section">
         <label for="startDate">Start Date:</label>
         <input type="date" id="startDate">
 
         <label for="endDate">End Date:</label>
         <input type="date" id="endDate">
+
         <button id="filterBtn">Filter</button>
-         <select id="categoryFilter">
+        <select id="categoryFilter">
           <option value="">All Categories</option>
           <option value="Shopping">Shopping</option>
           <option value="Food">Food</option>
@@ -51,10 +67,13 @@
           <option value="Education">Other</option>
           <option value="Other">Other</option>
         </select>
-        </div>
-         <button id="fetchDataBtn">All Transactions</button>
-         <div id="table-section">
-             <table id="transaction-table">
+
+      </div>
+
+      <button id="fetchDataBtn">All Transactions</button>
+      <!-- Trasanctions are dispalyed in table format  -->
+      <div id="table-section">
+        <table id="transaction-table">
           <thead>
             <tr>
               <th>Date</th>
@@ -64,13 +83,17 @@
             </tr>
           </thead>
           <tbody></tbody>
-        </table> 
-        </div>
-        <p id="totalDisplay">Total: KSh 0</p>
-        <div id="alertBox"></div>
+        </table>
+      </div>
+      <!-- Amount added are dispalyed -->
+      <p id="totalDisplay">Total: KSh 0</p>
+      <!-- For notifications on set spending limits -->
+      <div id="alertBox"></div>
+      <!-- Random tips and financial texts are dispalyed -->
       <div id="adviceBox"></div>
     </section>
-</main>
-<script src="script.js"></script>
+  </main>
+  <!-- Link to external JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
