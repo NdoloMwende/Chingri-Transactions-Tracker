@@ -14,4 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const monthlyLimit = document.getElementById("monthlyLimit");
   const saveLimitBtn = document.getElementById("saveLimitBtn");
   const darkModeToggle = document.getElementById("darkModeToggle"); 
+
+  function applyDark(isDark) {
+    document.body.classList.toggle("dark-mode", isDark);
+    localStorage.setItem("darkMode", isDark);
+  }
+
+  darkModeToggle.addEventListener("change", () => applyDark(darkModeToggle.checked));
 });
