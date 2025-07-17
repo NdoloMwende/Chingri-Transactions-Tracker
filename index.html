@@ -13,7 +13,7 @@
         <div id="dropdownMenu" class="dropdown-content">
         <label><input type="checkbox" id="darkModeToggle"> Dark Mode</label><br>
         <label><input type="checkbox" id="alertToggle"> Alert Me</label>
-       <button id="saveLimitBtn" style="margin-top: 0.5rem;">Save Limit</button>
+      
         <div id="limitSettings" style="margin-top: 1rem;">
         <input type="number" id="dailyLimit" placeholder="Daily Limit">
         <input type="number" id="weeklyLimit" placeholder="Weekly Limit">
@@ -25,6 +25,7 @@
           <option value="weekly">Weekly</option>
           <option value="monthly">Monthly</option>
         </select>
+         <button id="saveLimitBtn" style="margin-top: 0.5rem;">Save Limit</button>
 
         </div>
         </div>
@@ -33,6 +34,11 @@
    <main>
     <section>
         <div id="filter-section">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate">
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate">
 
         </div>
          <button id="fetchDataBtn">All Transactions</button>
