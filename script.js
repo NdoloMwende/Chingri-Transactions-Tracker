@@ -7,5 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const adviceBox = document.getElementById("adviceBox");
 
   //Dropdown Items
-   
+  const alertToggle = document.getElementById("alertToggle");
+  const alertFrequency = document.getElementById("alertFrequency");
+  const dailyLimit = document.getElementById("dailyLimit");
+  const weeklyLimit = document.getElementById("weeklyLimit");
+  const monthlyLimit = document.getElementById("monthlyLimit");
+  const saveLimitBtn = document.getElementById("saveLimitBtn");
+  const darkModeToggle = document.getElementById("darkModeToggle"); 
 });
