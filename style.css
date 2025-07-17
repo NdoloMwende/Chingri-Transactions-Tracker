@@ -71,6 +71,12 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.9;
+  color: green;
+}
+
+
 #table-section {
   overflow-x: auto;
 }
