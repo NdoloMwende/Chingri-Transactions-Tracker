@@ -1,0 +1,40 @@
+:root {
+  --primary: whitesmoke;
+  --background: whitesmoke;
+  --text: #1C1C1C;
+  --alert: #D7263D;
+  --advice: #F4B400;
+  --border: #CCCCCC;
+  --radius: 8px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  color: green;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 3px solid;
+}
+
+section {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+button {
+  background-color: greenyellow;
+  color: rgb(21, 20, 20);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
