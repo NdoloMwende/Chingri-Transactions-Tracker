@@ -97,6 +97,44 @@ function fetchTransactions() {
     alertBox.textContent = "";
   }
 
+  // Save & Load settings (alert toggle and save limit)
+  function saveSettings() {
+    const settings = {
+      alertOn: alertToggle.checked,
+      frequency: alertFrequency.value,
+      daily: parseFloat(dailyLimit.value) || 0,
+      weekly: parseFloat(weeklyLimit.value) || 0,
+      monthly: parseFloat(monthlyLimit.value) || 0
+    };
+    localStorage.setItem("chingriSettings", JSON.stringify(settings));
+  }
+
+  function loadSettings() {
+    const s = JSON.parse(localStorage.getItem("chingriSettings"));
+    if (s) {
+      alertToggle.checked = s.alertOn;
+      alertFrequency.value = s.frequency;
+      dailyLimit.value = s.daily || "";
+      weeklyLimit.value = s.weekly || "";
+      monthlyLimit.value = s.monthly || "";
+      document.getElementById("limitSettings").style.display = s.alertOn ? "flex" : "none";
+    }
+    const dark = localStorage.getItem("darkMode") === "true";
+    darkModeToggle.checked = dark;
+    applyDark(dark);
+  }
+
+  alertToggle.addEventListener("change", () => {
+    document.getElementById("limitSettings").style.display = alertToggle.checked ? "flex" : "none";
+    saveSettings();
+  });
+
+  saveLimitBtn.addEventListener("click", () => {
+    saveSettings();
+    alert("Limit saved!");
+  });
+
+
   // FINANCIAL ADVICE 
   function showAdvice() {
     const tips = [
@@ -128,6 +166,6 @@ function fetchTransactions() {
     ];
     adviceBox.textContent = tips[Math.floor(Math.random() * tips.length)];
   }
-
+  loadSettings();
   fetchBtn.addEventListener("click", fetchTransactions);
 });
