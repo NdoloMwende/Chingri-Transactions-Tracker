@@ -14,13 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const weeklyLimit = document.getElementById("weeklyLimit");
   const monthlyLimit = document.getElementById("monthlyLimit");
   const saveLimitBtn = document.getElementById("saveLimitBtn");
-  const darkModeToggle = document.getElementById("darkModeToggle"); 
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  
+  // Filter dropdown items
+  const categoryFilter = document.getElementById("categoryFilter");
+  const startDateInput = document.getElementById("startDate");
+  const endDateInput = document.getElementById("endDate");
+  const filterBtn = document.getElementById("filterBtn");
 
+  let transactions = [];
+
+  // Darkmode toggle
   function applyDark(isDark) {
     document.body.classList.toggle("dark-mode", isDark);
     localStorage.setItem("darkMode", isDark);
-  }
-    let transactions = [];
+  }  
   darkModeToggle.addEventListener("change", () => applyDark(darkModeToggle.checked));
 
 const API_URL = "http://localhost:3001/transactions"; // local server for transaction details
@@ -76,6 +84,19 @@ function fetchTransactions() {
 
     return "Other";
   }  
+
+  // Filtering
+  filterBtn.addEventListener("click", () => {
+  if (!startDateInput.value || !endDateInput.value) return;
+  const [from, to] = [new Date(startDateInput.value), new Date(endDateInput.value)];
+  const filtered = transactions.filter(t => {
+    const d = new Date(t.date);
+    return d >= from && d <= to;
+  });
+  renderTable(filtered);
+  updateTotals(filtered);
+});
+
 
   // TOTAL AMOUNT DISPLAYED
   function updateTotals(txArr) {
