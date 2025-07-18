@@ -146,4 +146,26 @@ body.dark-mode {
   color: #fff;
 }
 
+body.dark-mode #transaction-table th {
+  background-color: #2A2A2A;
+}
+
+body.dark-mode button {
+  background-color: #00D26A;
+  color: #111;
+}
+
+body.dark-mode #dropdownMenu label {
+  color: #CCCCCC;
+}
+
+body.dark-mode #adviceBox {
+  background-color: #2A2A2A;
+  border-left-color: #00D26A;
+}
+
+body.dark-mode #alertBox {
+  background-color: #6b1b1b;
+  color: #80FFDB;
+}
 

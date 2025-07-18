@@ -85,23 +85,7 @@ function fetchTransactions() {
     return "Other";
   }  
 
-  // Filtering
-filterBtn.addEventListener("clck", () => {
-  if (!startDateInput.value || !endDateInput.value) return;
-
-  const [from, to] = [new Date(startDateInput.value), new Date(endDateInput.value)];
-  const selectedCategory = categoryFilter.value;
-
-  const filtered = transactions.filter(t => {
-    const d = new Date(t.date);
-    const withinDate = d >= from && d <= to;
-    const matchesCategory = selectedCategory ? t.category === selectedCategory : true;
-  });
-
-  renderTable(filtered);
-  updateTotals(filtered);
-});
-
+ 
   // TOTAL AMOUNT DISPLAYED
   function updateTotals(txArr) {
     const total = txArr.reduce((sum, tx) => sum + tx.amount, 0);
@@ -191,6 +175,35 @@ filterBtn.addEventListener("clck", () => {
     ];
     adviceBox.textContent = tips[Math.floor(Math.random() * tips.length)];
   }
+
+   // Filtering
+  function applyFilters() {
+  let filtered = transactions;
+  const hasDateFilter = startDateInput.value && endDateInput.value;
+  const hasCategoryFilter = categoryFilter.value;
+
+  // Apply date filter only if dates are provided
+  if (hasDateFilter) {
+    const from = new Date(startDateInput.value);
+    const to = new Date(endDateInput.value);
+    filtered = filtered.filter(tx => {
+      const txDate = new Date(tx.date);
+      return txDate >= from && txDate <= to;
+    });
+  }
+
+  // Apply category filter only if category is selected
+  if (hasCategoryFilter) {
+    filtered = filtered.filter(tx => tx.category === categoryFilter.value);
+  }
+
+  txTable(filtered);
+  updateTotals(filtered);
+}
+
+
+filterBtn.addEventListener("click", applyFilters);
+
   loadSettings();
   fetchBtn.addEventListener("click", fetchTransactions);
 });
