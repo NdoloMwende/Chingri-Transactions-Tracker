@@ -42,14 +42,15 @@ function fetchTransactions() {
         category: categorize(tx.method || "") // Categorize the transaction
       }));
       txTable(transactions); // Render the transactions in a table
-     
+      updateTotals(transactions); // Update totals basedon transactions
      
     })
     .catch(error => {
       console.error(error); // Log any errors
+      alertBox.textContent = "Failed to fetch data."; // Inform the user of the error
+      alertBox.classList.add("visible"); // Make the alert box visible
       throw error;
-      // alertBox.textContent = "Failed to fetch data."; // Inform the user of the error
-      // alertBox.classList.add("visible"); // Make the alert box visible
+
     });
     
 }
@@ -73,5 +74,26 @@ function fetchTransactions() {
 
     return "Other";
   }  
+
+  
+  function updateTotals(txArr) {
+    const total = txArr.reduce((sum, tx) => sum + tx.amount, 0);
+    totalDisplay.textContent = `Total: KSh ${total}`;
+
+    const s = JSON.parse(localStorage.getItem("chingriSettings"));
+    console.log(s);
+    if (s?.alertOn) {
+      const limit = s[s.frequency] || 0;
+      console.log(limit);
+      if (limit && total > limit) {
+        alertBox.textContent = `You exceeded your ${s.frequency} limit of KSh ${limit}.`;
+        alertBox.classList.add("visible");
+        return;
+      }
+    }
+    alertBox.classList.remove("visible");
+    alertBox.textContent = "";
+  }
+
   fetchBtn.addEventListener("click", fetchTransactions);
 });

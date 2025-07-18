@@ -103,7 +103,7 @@ button:hover {
   margin-top: 1rem;
   padding: 1rem;
   background-color: var(--alert);
-  color: rgb(49, 214, 159);
+  color: black;
   border-radius: var(--radius);
   display: none;
 }
