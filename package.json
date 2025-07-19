@@ -1,16 +1,10 @@
 {
-  "name": "chingri_project",
+  "name": "json-api",
   "version": "1.0.0",
-  "description": "**Chingri** is a user-friendly transaction tracker web application that simulates an  mobile money system. It allows users to visualize their spending patterns, set personal limits, and receive helpful financial tips...all using HTML, CSS, JavaScript, DOM manipulation, and external APIs.",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.4"
   }
 }
