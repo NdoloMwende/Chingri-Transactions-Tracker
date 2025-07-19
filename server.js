@@ -7,7 +7,8 @@ const api = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
 // Serve static files from public folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "CODE")));
+
 
 // JSON Server middleware
 app.use("/api", middlewares);
@@ -15,7 +16,8 @@ app.use("/api", api);
 
 // Fallback to index.html for all other routes (for SPA support)
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+ res.sendFile(path.join(__dirname, "CODE", "index.html"));
+
 });
 
 const port = process.env.PORT || 3000;
