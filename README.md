@@ -95,7 +95,7 @@ chingri-transactions-tracker/
 
 ## **Live Demo**
 
-🔗 [View the live site on GitHub Pages](https://github.com/NdoloMwende/Chingri-Transactions-Tracker)
+🔗 [View the live site on GitHub Pages](https://ndolomwende.github.io/Chingri-Transactions-Tracker/)
 
 ---
 
