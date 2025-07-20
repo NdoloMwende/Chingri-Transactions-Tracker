@@ -1,4 +1,4 @@
-// CHINGRI TRANSACTIONS TRACKER
+// CHINGRI TRANSACTIONS TRACKER  
 document.addEventListener("DOMContentLoaded", () => {
 // ELEMENTS 
   const fetchBtn = document.getElementById("fetchDataBtn");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }  
   darkModeToggle.addEventListener("change", () => applyDark(darkModeToggle.checked));
 
-const API_URL = "http://localhost:3001/transactions"; // local server for transaction details
+const API_URL = "https://chingri-transactions-json-api.onrender.com/transactions"; // local server for transaction details
   
 function fetchTransactions() {
   fetch(API_URL)
@@ -52,15 +52,7 @@ function fetchTransactions() {
       txTable(transactions); // Render the transactions in a table
       updateTotals(transactions); // Update totals basedon transactions
       showAdvice();
-    })
-    .catch(error => {
-      console.error(error); // Log any errors
-      alertBox.textContent = "Failed to fetch data."; // Inform the user of the error
-      alertBox.classList.add("visible"); // Make the alert box visible
-      throw error;
-
-    });
-    
+    }) 
 }
 
  function txTable(arr) {

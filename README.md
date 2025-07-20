@@ -1,108 +1,139 @@
-# Chingri -Transaction Tracker
-
-**Chingri** is a user-friendly transaction tracker web application that simulates an  mobile money system. It allows users to visualize their spending patterns, set personal limits, and receive helpful financial tips...all using HTML, CSS, JavaScript, DOM manipulation, and external APIs.
 
 ---
 
-## Features
+# **Chingri Transactions Tracker**
 
-* **Fetch Simulated Transactions** from a mock API (Mockly)
-* **Filter Transactions by Date Range** (daily, weekly, monthly, or custom)
-* **Calculate Totals** for the selected data
-* **Set Custom Spending Limits** (daily, weekly, monthly)
-* **Toggle Spending Alerts** when limits are exceeded
-* **Dark Mode** with persistent settings
-* **Display Financial Advice** using a simulated tips array
-* **Responsive UI** that adapts to both desktop and mobile screens
+Welcome to the Chingri Transactions Tracker. This application helps you manage and track your financial transactions efficiently. Below is a detailed guide on how to set up and use the application.
 
 ---
 
-## Project Structure
+**Table of Contents**
 
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+
+---
+
+**Features**
+
+- **Transaction Tracking**: View and manage your transactions in a user-friendly table format.
+- **Filtering Options**: Filter transactions by date and category.
+- **Alerts**: Set spending limits and receive alerts when exceeded.
+- **Dark Mode**: Toggle between light and dark themes for better visibility.
+- **Financial Advice**: Get random financial tips to help manage your expenses.
+
+---
+
+## **Technologies Used**
+
+- **HTML**: For structuring the web pages.
+- **CSS**: For styling the application.
+- **JavaScript**: For dynamic functionality and interaction.
+- **Node.js**: For server-side operations.
+- **Express**: For handling server requests.
+- **JSON**: For data storage and retrieval.
+
+---
+
+## **Installation**
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/chingri-transactions-tracker.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd chingri-transactions-tracker
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Start the server**:
+   ```bash
+   node server.js
+   ```
+
+5. **Open your browser** and go to `http://localhost:3000` to view the application.
+
+---
+
+## **Project Structure**
 ```
-chingri/
-├── index.html         # Main HTML structure
-├── style.css          # CSS styling for layout, theme, and responsiveness
-├── script.js          # JavaScript logic: DOM handling, fetch, filtering, settings
-└── README.md          # Project documentation
+chingri-transactions-tracker/
+│
+├── CODE/
+│ ├── index.html 
+│ ├── script.js 
+│ └── style.css
+│
+├── db.json 
+├── server.js 
+├── package.json 
+├── package-lock.json 
+├── node_modules/
+└── README.md 
 ```
 
 ---
 
-## APIs Used
+## **Usage**
 
-* **JSON SERVER** 
+- **Fetching Transactions**: Click the "All Transactions" button to load your transaction data.
+- **Filtering Transactions**: Use the date and category filters to narrow down your transaction view.
+- **Setting Limits**: Use the dropdown menu to set daily, weekly, or monthly spending limits.
+- **Dark Mode**: Toggle the dark mode switch for a different viewing experience.
+
+## **Live Demo**
+
+🔗 [View the live site on GitHub Pages](https://github.com/NdoloMwende/Chingri-Transactions-Tracker)
+
+---
+
+## **Configuration**
+
+- **Local Storage**: The application saves user settings (like dark mode and alert preferences) in the browser's local storage.
+- **API Endpoint**: The application fetches transaction data from a remote API. Ensure the API is accessible for the application to function correctly.
+
+---
+
+## **Contributing**
+
+Contributions are welcome. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+---
+
+## **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+© 2025 Mercy Ndolo. All rights reserved.
 
 
 ---
 
-## How It Works
+## **Author**
 
-1. The user clicks the **"Fetch Transactions"** button.
-2. Transactions are fetched from the  local server in JSON format.
-3. The transaction data is displayed in a styled, scrollable table.
-4. The user can filter transactions by a date range.
-5. The app calculates and displays the total transaction amount.
-6. If enabled, the app alerts the user when the limit is exceeded.
-7. A random financial tip is displayed every time new data is fetched.
-8. Dark mode can be toggled and is remembered across sessions using `localStorage`.
-9. All user settings, including alert preferences and limits, are saved locally.
+**Chingri** was built by Mercy Ndolo as a hands-on project to reinforce essential frontend development skills. It bridges real-world problems (like financial tracking) with interactive programming. The project is designed to be fun, practical, and highly customizable.
+
+- **Name**: Mercy Ndolo
+- **GitHub**: [NdoloMwende](https://github.com/NdoloMwende)
 
 ---
 
-## Setup Instructions
-
-1. Clone or download this repository.
-2. Ensure the following files are in your project folder:
-
-   * `index.html`
-   * `style.css`
-   * `script.js`
-   * `README.md`
-3. Open `index.html` in your preferred web browser.
-4. (Optional) Use the Live Server extension in VS Code for real-time previews.
-
----
-
-## Technologies Used
-
-* **HTML5**
-* **CSS3**
-* **JavaScript (ES6)**
-* **DOM API**
-* **Fetch API**
-* **LocalStorage API**
-
----
-
-## Requirements Met
-
-* Integration of a JSON API
-* Dynamic DOM manipulation using JavaScript
-* User-friendly filtering and data rendering
-* Use of `eventListeners`, `fetch()`, and persistent storage
-* Clear file separation for maintainability
-
----
-
-## Future Enhancements
-
-* Integrate charts (e.g., using Chart.js) for visual insights
-* Allow manual transaction entry for testing and offline use
-* Implement user login/authentication for expanded features
-* Optimize layout for very small screen devices
-
----
-
-## Author Notes
-
-**Chingri** was built as a hands-on project to reinforce essential frontend development skills. It bridges real-world problems (like financial tracking) with interactive programming. The project is designed to be fun, practical, and highly customizable.
-
-**Name** Mercy Ndolo
-
-[**GITHUB PROFILE**](https://github.com/NdoloMwende)
----
-
-## License
-
-This project is intended for educational and personal learning purposes only. Commercial use of simulated data is not allowed.
+Happy tracking.
